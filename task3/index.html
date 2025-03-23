@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Data Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>📊 Advanced Data Analytics Dashboard</h1>
+            <button id="theme-toggle">🌙 Toggle Theme</button>
+        </header>
+
+        <div class="widgets">
+            <div class="widget" id="chart-container" draggable="true">
+                <canvas id="dataChart"></canvas>
+            </div>
+            <div class="widget" id="ai-insights" draggable="true">
+                <h2>🤖 AI Insights</h2>
+                <p id="insight-text">Loading insights...</p>
+            </div>
+            <div class="widget" id="export-data" draggable="true">
+                <h2>📁 Export Data</h2>
+                <button onclick="exportCSV()">Export as CSV</button>
+                <button onclick="exportPDF()">Export as PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
